@@ -3,5 +3,7 @@ version: "3"
 services:
   webserver:
     image: nginx:1.17
+    volumes:
+        - /var/index.html:/usr/share/nginx/html/index.html
     ports:
       - 8000:80
